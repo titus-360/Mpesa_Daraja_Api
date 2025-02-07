@@ -19,14 +19,14 @@ mpesa:
     grant-type: client_credentials
     oauth-endpoint: https://sandbox.safaricom.co.ke/oauth/v1/generate
     short-code: 600999
-    confirmation-url: https://ca94-130-61-85-147.ngrok-free.app/daraja/validation
-    validation-url: https://ca94-130-61-85-147.ngrok-free.app/daraja/confirmation
+    confirmation-url: https://5e81-102-68-77-127.ngrok-free.app/daraja/validation
+    validation-url: https://5e81-102-68-77-127.ngrok-free.app/daraja/confirmation
     response-type: Completed
     url-registration-endpoint: https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl
     c2b-transaction-endpoint: https://sandbox.safaricom.co.ke/mpesa/c2b/v1/simulate
     b2c-transaction-endpoint: https://sandbox.safaricom.co.ke/mpesa/b2c/v3/paymentrequest
     stk-push-endpoint: https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest
-    stk-push-call-back: https://ca94-130-61-85-147.ngrok-free.app/api/v1/daraja/stkpush/callback
+    stk-push-call-back: https://5e81-102-68-77-127.ngrok-free.app/daraja/stkpush/callback
 
 
 

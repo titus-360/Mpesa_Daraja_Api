@@ -47,7 +47,7 @@ public class MpesaServiceImplementation implements MpesaService {
                 //log.error("Request failed with status code: {}", response.code());
                 return null;
             }
-            String responseBody = response.body() != null ? response.body().string() : "";
+            String responseBody = response.body().string();
             if (responseBody.isEmpty()) {
                 log.error("Received empty response body");
                 return null;
