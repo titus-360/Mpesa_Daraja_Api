@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: Payment_Service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mpesatest
+    driver-class-name: org.postgresql.Driver
+    username: titus-b
+    password: 123456789
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+mpesa:
+  daraja:
+    consumer-key: zmg58Gd3obs4tYoHiHhoEG4o3lcD8vfhRtlNvvGAqbDadNKs
+    consumer-secret: CCsDFu8HFZAAb18zsfH0AB9K4AAGnK2PvIXlAtvJQg2eR9YE5olGayQ9glguzhxz
+    grant-type: client_credentials
+    oauth-endpoint: https://sandbox.safaricom.co.ke/oauth/v1/generate
+    short-code: 600999
+    confirmation-url: https://ca94-130-61-85-147.ngrok-free.app/daraja/validation
+    validation-url: https://ca94-130-61-85-147.ngrok-free.app/daraja/confirmation
+    response-type: Completed
+    url-registration-endpoint: https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl
+    c2b-transaction-endpoint: https://sandbox.safaricom.co.ke/mpesa/c2b/v1/simulate
+    b2c-transaction-endpoint: https://sandbox.safaricom.co.ke/mpesa/b2c/v3/paymentrequest
+    stk-push-endpoint: https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest
+    stk-push-call-back: https://ca94-130-61-85-147.ngrok-free.app/api/v1/daraja/stkpush/callback
+
+
+
+
+
+
+
+server:
+  port: 60789
+
